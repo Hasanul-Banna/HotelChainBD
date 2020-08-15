@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="home">
             <nav class="main-header fixed-top">
                 <div>
-                    <img class="brand-logo" src="images/logo.png" alt="">
+                    <a href="#home">
+                        <img class="brand-logo" src="images/logo.png" alt="">
+                    </a>
                 </div>
-                <input type="checkbox" class="menu-btn" id="menu-btn">
-                <label for="menu-btn" class="menu-icon">
-                    <span class="menu-icon-line"></span>
-                </label>
                 <ul class="nav-items" >
-                    <li><a href="#home">Home</a></li>
+                    <li><a  href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#room">Rooms</a></li>
                     <li><a href="#">Hotels</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#foter">About us</a></li>
+                    <li><a href="#footer">Contact</a></li>
                     <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign up</a></li>
                 </ul>
+
             </nav>
     </header>
 
     <section id="services" class="services-section">
         <div class="container">
-               <h2 >SER<span>VI</span>CES</h2>
-                <p class="text-center" style="font-size: 20px;">Below are the services we are providing which makes us different from others and unique.</p>
-            <div class="row">
-                <div class="col-md-6 service-item">
+               <h2 data-aos="fade-up"  data-aos-duration="500" data-aos-delay="0" >SER<span>VI</span>CES</h2>
+                <p class="text-center" style="font-size: 20px;" data-aos="fade-up"  data-aos-duration="500" data-aos-delay="0">Below are the services we are providing which makes us different from others and unique.</p>
+            <div class="row pt-3 pb-3">
+                <div class="col-md-6 service-item" data-aos="fade-right"  data-aos-duration="500" data-aos-delay="0">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -46,7 +47,7 @@
                         <p>Book hotel within 5 clicks with Hotel Chain App. See authentic pictures and compare prices. Also navigate till Hotel door</p>
                     </div>
                 </div>
-                <div class="col-md-6 service-item">
+                <div class="col-md-6 service-item" data-aos="fade-left"  data-aos-duration="500" data-aos-delay="0">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -56,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 service-item">
+                <div class="col-md-6 service-item" data-aos="fade-right"  data-aos-duration="500" data-aos-delay="100">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -65,17 +66,7 @@
                         <p>Hotel Chain accepts all kinds of payment methods. All kinds of Mobile Banking (Bkash, Nagad, Rocket, Nexus Pay, Upay, MCash, FastCash, My Cash, Ok Wallet, Dmoney). Also all kinds of Debit & Credit cards(Visa, Mastercard, American Express etc.) along with Bank Transfers.</p>
                     </div>
                 </div>
-                <div class="col-md-6 service-item">
-                    <div class="icon">
-                        <i class="fas fa-mobile"></i>
-                    </div>
-                    <div class="description">
-                        <h4>EMI Facilities</h4>
-                        <p>Hotel Chain offers EMI facilities over 16 banks. EMI facilities starts form 3 months to 36 months. EMI starts form 5,000 Taka.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 service-item">
+                <div class="col-md-6 service-item" data-aos="fade-left"  data-aos-duration="500" data-aos-delay="100">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -84,7 +75,17 @@
                         <p>Hotel Chain offers Subscription for better experience. Subscribed customers can avail up to 10% Flat discount. Also offering Pick & Drop service. Get refreshment welcome drinks by being a subscribed customer.</p>
                     </div>
                 </div>
-                <div class="col-md-6 service-item">
+
+                <div class="col-md-6 service-item" data-aos="fade-right"  data-aos-duration="500" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="description">
+                        <h4>EMI Facilities</h4>
+                        <p>Hotel Chain offers EMI facilities over 16 banks. EMI facilities starts form 3 months to 36 months. EMI starts form 5,000 Taka.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 service-item" data-aos="fade-left"  data-aos-duration="500" data-aos-delay="200">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -94,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 service-item">
+                <div class="col-md-6 service-item" data-aos="fade-right"  data-aos-duration="500" data-aos-delay="300">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -103,17 +104,7 @@
                         <p>Hotel Chain follows all the reviews. Hotel Chain gives priority to customer’s choice. Customer can see reviews and ratings and chose their best stay</p>
                     </div>
                 </div>
-                <div class="col-md-6 service-item">
-                    <div class="icon">
-                        <i class="fas fa-mobile"></i>
-                    </div>
-                    <div class="description">
-                        <h4>Secured User Data</h4>
-                        <p>Hotel Chain secures its customers personal data and highly maintain their privacy.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 service-item">
+                <div class="col-md-6 service-item" data-aos="fade-left"  data-aos-duration="500" data-aos-delay="300">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -122,7 +113,17 @@
                         <p>Hotel Chain provides nearby hotels without any hassle, it also notifies you the best deals according to your location.</p>
                     </div>
                 </div>
-                <div class="col-md-6 service-item">
+
+                <div class="col-md-6 service-item" data-aos="fade-right"  data-aos-duration="500" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="description">
+                        <h4>Secured User Data</h4>
+                        <p>Hotel Chain secures its customers personal data and highly maintain their privacy.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 service-item" data-aos="fade-left"  data-aos-duration="500" data-aos-delay="400">
                     <div class="icon">
                         <i class="fas fa-mobile"></i>
                     </div>
@@ -135,23 +136,31 @@
         </div>
     </section>
 
-    <section class="room">
-        <h2>RO<span>O</span>MS</h2>
+    <section id="room" class="room">
+        <h2 data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0" >RO<span>O</span>MS</h2>
         <div class="container">
             <div class="room-gallary">
-            <div class="row pt-4 pb-4">
-                <div class="col-md-8 ">
+            <div class="row pt-5 pb-5">
+                <div class="col-md-4">
+                    <div class="imgholder">
                     <a href="images/room1.jpg">
-                        <img class="card-img-top" src="images/room1.jpg" alt="">
+                        <img  data-aos="flip-left" data-aos-duration="800" data-aos-delay="0" class="card-img-top" src="images/room1.jpg" alt="">
                     </a> 
+                    </div>
                 </div>
                 <div class="col-md-4">
+                    <div class="imgholder">
                     <a href="images/room2.jpg">
-                        <img class="card-img-top" src="images/room2.jpg" alt="">
+                        <img data-aos="flip-left" data-aos-duration="800" data-aos-delay="0" class="card-img-top" src="images/room2.jpg" alt="">
                     </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="imgholder">
                     <a href="images/room3.jpg">
-                        <img class="card-img-top pt-3" src="images/room3.jpg" alt="">
+                        <img data-aos="flip-left" data-aos-duration="800" data-aos-delay="0" class="card-img-top" src="images/room3.jpg" alt="">
                     </a>
+                    </div>
                 </div>
             </div>
             </div>
@@ -161,25 +170,60 @@
 
 
     <section class="offers">
-        <h2 >off<span>e</span>res</h2>
-        <div class="container-fluid">
-            <div class="row pt-4">
-                <div class="col-md-6">
-                    <img style="width: 49%;" src="images/offer3.jpg" alt="">
-                    <img style="width: 49%;float:right;" src="images/offer06.jpg" alt="">
-                    <img style="width: 100%;" src="images/offer01.jpg" alt="">
+        <h2 data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0">off<span>e</span>res</h2>
+        <div class="container">
+            <div class="room-gallary">
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                            <a href="images/offer01.jpg">
+                                <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0" class="card-img-top" src="images/offer01.jpg" alt="">
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                        <a href="images/offer02.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="200" class="card-img-top" src="images/offer02.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                        <a href="images/offer3.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="400" class="card-img-top" src="images/offer3.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                        <a href="images/offer4.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0" class="card-img-top" src="images/offer4.jpg" alt="">
+                        </a> 
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                        <a href="images/offer5.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="200" class="card-img-top" src="images/offer5.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="imgholder">
+                        <a href="images/offer06.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="400" class="card-img-top" src="images/offer06.jpg" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="col-md-6">
-                    <img style="width: 100%;" src="images/offer4.jpg" alt="">
-                    <img style="width: 49%;" src="images/offer5.jpg" alt="">
-                    <img style="width: 49%;float:right;" src="images/offer02.jpg" alt="">
                 </div>
-            </div>
         </div>
     </section>
 
     <!-- Footer -->
-<footer class="page-footer font-small pt-4">
+<footer id="footer" class="page-footer font-small pt-4">
     <div class="container text-center text-md-left">
       <div class="row">
         <div class="col-md-6 mt-md-0 mt-3">
@@ -206,14 +250,14 @@
             <li>
               <a href="#!">Support</a>
             </li>
-            <li>
+            <li class="pb-2 pt-2">
               <a href="#!">
-                  <img style="width: 50%;" src="images/bdge01.png" alt="">
+                  <img class="bdge"  src="images/bdge01.png" alt="">
               </a>
             </li>
             <li>
               <a href="#!">
-                  <img style="width: 50%;" src="images/bdge02.png" alt="">
+                  <img class="bdge" src="images/bdge02.png" alt="">
               </a>
             </li>
           </ul>  
@@ -224,13 +268,13 @@
         <div class="row">
           <div class="col-sm-12" >
             <ul class="sci">
-              <li><a href="#"<i class="fab fa-facebook-f" ></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
-            <p class="cpryt"> &copy; Copyright 2020 । All Right Reserved By  <a href="#" >Hasanul Banna</a></p>
+            <p class="cpryt"> &copy; Copyright 2020 । All Right Reserved By  <a href="#" >NGSOFTWORKS</a></p>
           </div>
         </div>
       </div>
@@ -245,9 +289,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- AOS library CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- bagutteBox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script>
+        AOS.init();
         baguetteBox.run('.room-gallary');
         const header = document.querySelector('.main-header');
         window.addEventListener("scroll" , () => {
@@ -257,7 +304,9 @@
             } else {
                 header.classList.remove('scrolled');
             }
-        })
+        }) ;
+         
+
     </script>
 </body>
 </html>
