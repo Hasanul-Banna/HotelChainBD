@@ -19,6 +19,9 @@ body {
     left :50%;
     transform: translate(-50% , -50%);
 }
+.btn:hover {
+    color: red;
+}
 .room img , .offers img {
     padding-bottom: 20px;
 
