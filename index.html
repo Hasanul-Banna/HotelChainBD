@@ -13,27 +13,38 @@
 </head>
 <body>
     <header id="home">
-            <nav class="main-header fixed-top">
-                <div>
-                    <a href="#home">
-                        <img class="brand-logo" src="images/logo.png" alt="">
-                    </a>
+		<main class="main-header fixed-top">
+			<div>
+				<a href="#home">
+					<img class="brand-logo" src="https://hasanul-banna.github.io/HotelChainBD/images/logo.png" alt="">
+				</a>
+            </div>
+			<ul class="nav-items" >
+				<li><a  href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#room">Rooms</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#footer">About us</a></li>
+				<li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div onclick="openNav()" id="burger">
+                    &equiv;
                 </div>
-                <!-- navbar -->
-                
-                <!-- navbar -->
-                <ul class="nav-items" >
-                    <li><a  href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#room">Rooms</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#foter">About us</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Sign up</a></li>
-                </ul>
-            </nav>
-            <button  class="btn" >FIND HOTELS</button>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void()" onclick="closeNav()" class="closebtn text-white">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">Home</a>
+                            <a onclick="closeNav()" href="#services">Services</a>
+                            <a onclick="closeNav()" href="#room">Rooms</a>
+                            <a onclick="closeNav()" href="#">Hotels</a>
+                            <a onclick="closeNav()" href="#footer">About us</a>
+                            <a onclick="closeNav()" href="#footer">Contact</a>
+                        </div>
+                    </div>
+            </div>
+		</main>
+          <button  class="btn" >FIND HOTELS</button>
     </header>
 
     <section id="services" class="services-section">
@@ -167,8 +178,7 @@
                 </div>
             </div>
             </div>
-        </div>
-        
+        </div>        
     </section>
 
 
@@ -277,15 +287,20 @@
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
-            <p class="cpryt"> &copy; Copyright 2020 । All Right Reserved By  <a href="#" >NGSOFTWORKS</a></p>
+            <div class="copyright"> 
+                <p>
+                    <i class="far fa-copyright"></i>Copyright <span>|</span> <a href="#" >Hotelchainbd</a>
+                </p>
+                <p>
+                    <i class="fas fa-laptop-code"></i>Developed by <span>|</span> <a href="#" >NGSOFTWORKS</a>
+                </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!-- Footer -->
-
-
 
     <!-- Font awesome cdn -->
     <script src="https://kit.fontawesome.com/90113be503.js" crossorigin="anonymous"></script>
@@ -308,8 +323,14 @@
                 header.classList.remove('scrolled');
             }
         }) ;
-         
+        function openNav() {
+            document.getElementById('myNav').style.width = "100%" ;
+        }
+        function closeNav() {
+            document.getElementById('myNav').style.width = "0%" ;
+        }
+
 
     </script>
 </body>
-</html>
+</html
