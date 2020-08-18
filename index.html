@@ -13,24 +13,38 @@
 </head>
 <body>
     <header id="home">
-            <nav class="main-header fixed-top">
-                <div>
-                    <a href="#home">
-                        <img class="brand-logo" src="images/logo.png" alt="">
-                    </a>
+		<main class="main-header fixed-top">
+			<div>
+				<a href="#home">
+					<img class="brand-logo" src="https://hasanul-banna.github.io/HotelChainBD/images/logo.png" alt="">
+				</a>
+            </div>
+			<ul class="nav-items" >
+				<li><a  href="#home">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#room">Rooms</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#footer">About us</a></li>
+				<li><a href="#footer">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <div onclick="openNav()" id="burger">
+                    &equiv;
                 </div>
-                <ul class="nav-items" >
-                    <li><a  href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#room">Rooms</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#foter">About us</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Sign up</a></li>
-                </ul>
-
-            </nav>
+                    <div id="myNav" class="overlay">
+                        <a onclick="closeNav()" href="javascript:void()"  class="closebtn text-white">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">Home</a>
+                            <a onclick="closeNav()" href="#services">Services</a>
+                            <a onclick="closeNav()" href="#room">Rooms</a>
+                            <a onclick="closeNav()" href="#">Hotels</a>
+                            <a onclick="closeNav()" href="#footer">About us</a>
+                            <a onclick="closeNav()" href="#footer">Contact</a>
+                        </div>
+                    </div>
+            </div>
+		</main>
+           <a class="btn" href="https://hotelchainbd.com/hotelsView">FIND HOTELS</a>
     </header>
 
     <section id="services" class="services-section">
@@ -164,13 +178,12 @@
                 </div>
             </div>
             </div>
-        </div>
-        
+        </div>        
     </section>
 
 
     <section class="offers">
-        <h2 data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0">off<span>e</span>res</h2>
+        <h2 data-aos="fade-up"  data-aos-duration="800" data-aos-delay="0">of<span>fe</span>rs</h2>
         <div class="container">
             <div class="room-gallary">
                 <div class="row pt-5 pb-5">
@@ -190,8 +203,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="imgholder">
-                        <a href="images/offer3.jpg">
-                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="400" class="card-img-top" src="images/offer3.jpg" alt="">
+                        <a href="images/offer5.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="400" class="card-img-top" src="images/offer5.jpg" alt="">
                         </a>
                         </div>
                     </div>
@@ -204,8 +217,8 @@
                     </div>
                     <div class="col-md-4">
                         <div class="imgholder">
-                        <a href="images/offer5.jpg">
-                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="200" class="card-img-top" src="images/offer5.jpg" alt="">
+                        <a href="images/offer3.jpg">
+                            <img data-aos="fade-up"  data-aos-duration="800" data-aos-delay="200" class="card-img-top" src="images/offer3.jpg" alt="">
                         </a>
                         </div>
                     </div>
@@ -230,7 +243,6 @@
           <h5 class="text-uppercase">About Us</h5>
           <p>Hotel Chain is the largest online hotel booking app in Bangladesh. Consumer can choose their best stay with our best offers. The dream of our customer is like 5 click away from being true. Hotel Chain always concerned about their customer’s security. Hotel Chain always provide authentic information & prices.</p>  
         </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-3 mb-md-0 mb-3">
           <h5 class="text-uppercase">Contact Us</h5>  
           <ul class="list-unstyled">
@@ -274,15 +286,20 @@
               <li><a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
-            <p class="cpryt"> &copy; Copyright 2020 । All Right Reserved By  <a href="#" >NGSOFTWORKS</a></p>
+            <div class="copyright"> 
+                <p>
+                    <i class="far fa-copyright"></i>Copyright <span>|</span> <a href="#" >Hotelchainbd</a>
+                </p>
+                <p>
+                    <i class="fas fa-laptop-code"></i>Developed by <span>|</span> <a href="#" >NGSOFTWORKS</a>
+                </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!-- Footer -->
-
-
 
     <!-- Font awesome cdn -->
     <script src="https://kit.fontawesome.com/90113be503.js" crossorigin="anonymous"></script>
@@ -305,7 +322,12 @@
                 header.classList.remove('scrolled');
             }
         }) ;
-         
+        function openNav() {
+            document.getElementById('myNav').style.width = "100%" ;
+        }
+        function closeNav() {
+            document.getElementById('myNav').style.width = "0%" ;
+        }
 
     </script>
 </body>

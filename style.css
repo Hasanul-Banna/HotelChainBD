@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Kurale', serif;
+
 }
 body {
     background-color: whitesmoke;
+}
+.btn {
+    font-size: 4rem;
+    color: crimson ;
+    border:2px solid crimson;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    border-radius: 10px;
+    padding: 0px 20px;
+    top:50%;
+    left :50%;
+    transform: translate(-50% , -50%);
+}
+.btn:hover {
+    color: crimson;
+    text-shadow: 
+        0 0 5px #ff7bac,
+        0 0 10px #ff7bac,
+        0 0 20px #ff7bac,
+        0 0 40px #ff7bac,
+        0 0 80px #ff7bac;
+        transition: .3s ease-out;
+        box-shadow: 
+        0 0 5px crimson,
+        0 0 10px crimson,
+        0 0 20px  crimson;
 }
 .room img , .offers img {
     padding-bottom: 20px;
@@ -13,11 +43,6 @@ body {
 }
 .scrolled {
     background: rgba(0, 0, 0, 0.9);
-}
-.scrolled .menu-icon .menu-icon-line, 
-.scrolled .menu-icon .menu-icon-line::before ,
-.scrolled .menu-icon .menu-icon-line::after {
-    background-color:#fff ;
 }
 header {
     width: 100%;
@@ -38,15 +63,16 @@ header {
     z-index: 1;
     transition: .4s ease-in-out;
 }
-nav ul {
+
+main ul {
     display: flex;
     margin-right: 30px;
     margin-top: 20px;
 }
-nav ul li {
+main ul li {
     list-style-type: none;
 }
-nav ul li a {
+main ul li a {
     text-decoration: none !important;
     color: rgba(255, 255, 255, 0.9); 
     position: relative;
@@ -54,7 +80,7 @@ nav ul li a {
     margin: 0 10px;
     letter-spacing: 2px;
 }
-nav ul li a::before ,nav ul li a::after {
+main ul li a::before ,main ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -64,19 +90,19 @@ nav ul li a::before ,nav ul li a::after {
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
 }
-nav ul li a::before {
+main ul li a::before {
     top: 0;
     transform-origin: left;
 }
-nav ul li a:hover{
+main ul li a:hover{
     color: white;
 }
-nav ul li a::after {
+main ul li a::after {
     bottom: 0;
     transform-origin: right;
 }
-nav ul li a:hover::before ,
-nav ul li a:hover::after {
+main ul li a:hover::before ,
+main ul li a:hover::after {
     transform: scaleX(1);
 }
 .service-item {
@@ -129,6 +155,7 @@ section h2{
 }
 .room-gallary img {
     width: 100%;
+    height: 250px;
 }
 footer {
     width: 100%;
@@ -150,38 +177,43 @@ footer {
 	list-style: none;
 	margin: 0 10px;
 }
-.sci li a 
+.sci li a ,.copyright a
 {
 	color: white;
 	font-size: 1.5em;
 	transition: 0.5s;
 }
-.sci li a:hover
+.sci li a:hover , .copyright a:hover
 {
-	color: red;
+	color: crimson;
 }
-.cpryt
-{
-    margin-top: 15px;
-	text-align: center;
-	color: rgb(27, 191, 145);
-    letter-spacing: 5px;
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 4px;
 }
-.cpryt a
-{
-	color: rgb(27, 191, 145);
-	transition: 0.5s;
+footer h5 {
+    position: relative;
 }
-.cpryt a:hover
-{
-	color: white;
+footer h5::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background: red;
+    top: 100%;
+    left: 0%;
+    margin-top: 3px;
+}
+#burger {
+   display: none;
 }
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 767px) {
     .room-gallary .imgholder{
         overflow: hidden;
     }
-    
     #services{
         overflow: hidden;
     }
@@ -194,14 +226,26 @@ footer {
     .bdge {
         width: 50%;
     }
+    .mobile-menu {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 900px) {
- nav ul li a {
-     letter-spacing: 0px;
+@media screen and (max-width: 1000px) {
+ main ul li a {
+     letter-spacing: 2px;
  }
+ .btn {
+     font-size: 3rem;
+ }
+ .copyright{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 0px;
+    }
 }
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
 
     #services{
         overflow: hidden;
@@ -212,5 +256,64 @@ footer {
     .nav-items {
         display: none;
     }
- }
+    #burger {
+        color: white;
+        font-size: 3rem;
+        display: block;
+        padding-right: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .closebtn {
+        color: white;
+        font-size: 3rem;
+        display: block;
+        padding-right: 20px;
+        cursor: pointer;
+        float: right;
+        user-select: none;
+    }
+    .overlay {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 100;
+        overflow-x: hidden;
+        transition: .3s ease-in;
+        
+    }
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        top: 10%;
+    }
+    .overlay a {
+        text-decoration: none; 
+        color: crimson;
+        padding-top: 3%;
+    }
 
+    footer h5::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 50px;
+        background: red;
+        top: 100%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: 3px;
+    }
+    .btn {
+        font-size: 2rem;
+    }
+    
+ }
